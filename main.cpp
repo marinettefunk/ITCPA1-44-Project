@@ -4,10 +4,9 @@ using namespace std;
 
 int main(){
     cout << "Welcome to the Dice Simulation Program!" << endl;
+    cout << endl;
     
     choice();
-    rollDice();
-    history();
-
+    
     return 0;
 }
