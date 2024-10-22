@@ -45,8 +45,8 @@ float currency() {
 
     do {
         cout << "Enter the value to convert (USD): ";
-        if (!(cin >> USD)) {
-            inputError("Invalid input. Please enter a number.");
+        if (!(cin >> USD) || USD < 0) {
+            inputError("Invalid input. Please enter positive a number.");
         } else {
             ZAR = USD * USD_TO_ZAR_CONVERSION;
             cout << fixed << setprecision(2) << USD << " USD is " << ZAR << " ZAR." << endl;
@@ -66,8 +66,8 @@ float speed() {
 
     do {
         cout << "Enter the value to convert (MPH): ";
-        if (!(cin >> MPH)) {
-            inputError("Invalid input. Please enter a number.");
+        if (!(cin >> MPH) || MPH < 0) {
+            inputError("Invalid input. Please enter a positive number.");
         } else {
             KMH = MPH * MILE_TO_KMH_CONVERSION;
             cout << fixed << setprecision(2) << MPH << " MPH is " << KMH << " KMH." << endl;
