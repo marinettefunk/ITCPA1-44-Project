@@ -1,12 +1,13 @@
 #include <iostream>
-#include "canidates.h"
+#include "candidates.h"
 #include "votes.h"
+
 using namespace std;
 
 int main() {
     cout << "Welcome to the Class President Voting System" << endl; // Program title.
     cout <<endl;
-    canidates(); // Display canidates menu.
+    candidates(); // Display canidates menu.
     cout<<endl;
 
     // Display and get the number of students voting.

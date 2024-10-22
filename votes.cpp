@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <limits>
-#include "canidates.h"
+#include "candidates.h"
 
 using namespace std;
 
@@ -62,7 +62,6 @@ string voterFullName() {
         cout << "Enter your first name: ";
         cin >> name;
 
-
         if (name.empty()) {
             cout << "Invalid input. Name cannot be empty.\n" << endl;
         } else if (!isupper(name[0])) {
@@ -95,7 +94,7 @@ string voterFullName() {
 }
 
 // Function that handles the voter's input and to count votes.
-void vote(int numVoters, int& canidate1VoteCount, int& canidate2VoteCount, int& canidate3VoteCount, int& canidate4VoteCount) {
+void vote(int numVoters, int& candidate1VoteCount, int& candidate2VoteCount, int& candidate3VoteCount, int& candidate4VoteCount) {
     for (int i = 1; i <= numVoters; i++) {
         cout << "Voter " << i << ": " << endl;
 
@@ -106,7 +105,7 @@ void vote(int numVoters, int& canidate1VoteCount, int& canidate2VoteCount, int& 
         do {
             int vote;
             cout << endl;
-            canidates();
+            candidates();
             cout << "Enter your vote (1-4): ";
             cin >> vote;
             
@@ -120,16 +119,16 @@ void vote(int numVoters, int& canidate1VoteCount, int& canidate2VoteCount, int& 
             // Votes counted.
             switch (vote) {
                 case 1:
-                    canidate1VoteCount++;
+                    candidate1VoteCount++;
                     break;
                 case 2:
-                    canidate2VoteCount++;
+                    candidate2VoteCount++;
                     break;
                 case 3:
-                    canidate3VoteCount++;
+                    candidate3VoteCount++;
                     break;
                 case 4:
-                    canidate4VoteCount++;
+                    candidate4VoteCount++;
                     break;
             }
 
@@ -137,16 +136,16 @@ void vote(int numVoters, int& canidate1VoteCount, int& canidate2VoteCount, int& 
             if (!confirmChoice("Are you sure about your vote? (y/n) or (Y/N): ")) {
                 switch (vote) {
                     case 1:
-                        canidate1VoteCount--;
+                        candidate1VoteCount--;
                         break;
                     case 2:
-                        canidate2VoteCount--;
+                        candidate2VoteCount--;
                         break;
                     case 3:
-                        canidate3VoteCount--;
+                        candidate3VoteCount--;
                         break;
                     case 4:
-                        canidate4VoteCount--;
+                        candidate4VoteCount--;
                         break;
                 }
             } else {
@@ -158,22 +157,22 @@ void vote(int numVoters, int& canidate1VoteCount, int& canidate2VoteCount, int& 
 }
 
 // Function to display results of voting.
-void results(int canidate1VoteCount, int canidate2VoteCount, int canidate3VoteCount, int canidate4VoteCount) {
+void results(int candidate1VoteCount, int candidate2VoteCount, int candidate3VoteCount, int candidate4VoteCount) {
     cout << "Vote Results:" << endl;
-    cout << "John Parker: " << canidate1VoteCount << " votes" << endl;
-    cout << "Jane Smith: " << canidate2VoteCount << " votes" << endl;
-    cout << "Alice Johnson: " << canidate3VoteCount << " votes" << endl;
-    cout << "Bob Williams: " << canidate4VoteCount << " votes" << endl;
+    cout << "John Parker: " << candidate1VoteCount << " votes" << endl;
+    cout << "Jane Smith: " << candidate2VoteCount << " votes" << endl;
+    cout << "Alice Johnson: " << candidate3VoteCount << " votes" << endl;
+    cout << "Bob Williams: " << candidate4VoteCount << " votes" << endl;
     cout << endl;
 
-    // Result displayed based on canidate with the highest number of votes.
-    if (canidate1VoteCount > canidate2VoteCount && canidate1VoteCount > canidate3VoteCount && canidate1VoteCount > canidate4VoteCount) {
+    // Result displayed based on candidate with the highest number of votes.
+    if (candidate1VoteCount > candidate2VoteCount && candidate1VoteCount > candidate3VoteCount && candidate1VoteCount > candidate4VoteCount) {
         cout << "John Parker is the new Class President!" << endl;
-    } else if (canidate2VoteCount > canidate1VoteCount && canidate2VoteCount > canidate3VoteCount && canidate2VoteCount > canidate4VoteCount) {
+    } else if (candidate2VoteCount > candidate1VoteCount && candidate2VoteCount > candidate3VoteCount && candidate2VoteCount > candidate4VoteCount) {
         cout << "Jane Smith is the new Class President!" << endl;
-    } else if (canidate3VoteCount > canidate1VoteCount && canidate3VoteCount > canidate2VoteCount && canidate3VoteCount > canidate4VoteCount) {
+    } else if (candidate3VoteCount > candidate1VoteCount && candidate3VoteCount > candidate2VoteCount && candidate3VoteCount > candidate4VoteCount) {
         cout << "Alice Johnson is the new Class President!" << endl;
-    } else if (canidate4VoteCount > canidate1VoteCount && canidate4VoteCount > canidate2VoteCount && canidate4VoteCount > canidate3VoteCount) {
+    } else if (candidate4VoteCount > candidate1VoteCount && candidate4VoteCount > candidate2VoteCount && candidate4VoteCount > candidate3VoteCount) {
         cout << "Bob Williams is the new Class President!" << endl;
     } else {
         cout << "It is a tie!" << endl;

@@ -5,13 +5,11 @@
 #include <string>
 #include <limits>
 
-using namespace std;
-
-void inputError ();
+void inputError();
 int numVoters();
 bool confirmChoice(const std::string& message);
-string voterFullName();
-void vote(int numVoters, int& canidate1VoteCount, int& canidate2VoteCount, int& canidate3VoteCount, int& canidate4VoteCount);
-void results(int canidate1VoteCount, int canidate2VoteCount, int canidate3VoteCount, int canidate4VoteCount);
+std::string voterFullName();
+void vote(int numVoters, int& candidate1VoteCount, int& candidate2VoteCount, int& candidate3VoteCount, int& candidate4VoteCount);
+void results(int candidate1VoteCount, int candidate2VoteCount, int candidate3VoteCount, int candidate4VoteCount);
 
 #endif // VOTES_H
