@@ -48,7 +48,7 @@ bool confirmChoice(const string& message) {
         } else if (choice == 'n' || choice == 'N') {
             return false;
         } else {
-            cout << "Invalid input. Please enter y/n or Y/N.\n" << endl;
+            cout << "\nInvalid input. Please enter y/n or Y/N.\n" << endl;
         }
     } while (true);
 }
