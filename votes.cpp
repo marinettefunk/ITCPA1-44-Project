@@ -42,14 +42,13 @@ bool confirmChoice(const string& message) {
 
         if (cin.fail()) {
             inputError();
-            cout << "Invalid input. Please enter y/n or Y/N.\n" << endl;
         } else if (choice == 'y' || choice == 'Y') {
             return true;
         } else if (choice == 'n' || choice == 'N') {
             return false;
         } else {
-            cout << "\nInvalid input. Please enter y/n or Y/N.\n" << endl;
-        }
+            cout << endl;
+            cout << "Invalid input. Please enter y/n or Y/N.\n" << endl;}
     } while (true);
 }
 
