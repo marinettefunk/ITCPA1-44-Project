@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// Function to handle input errors.
 void inputError (){
     cin.clear(); // Clear error flag.
     cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Ignore all remaining input until new line.
