@@ -13,6 +13,12 @@ A Class President Voting System needs to be written in C++ and do the following,
 -	The votes should be counted for each candidate and displayed (only valid votes).
 -	The program will display the winner or indicate the case where a tie occurred.
 
+Algorithm the program was designed around:
+![image](https://github.com/user-attachments/assets/21407e54-e705-451c-9aff-dad309d46d85)
+
+
+
+
 ## Multi-Converter App
 A Multi-Converter App for a friend from the United states needs to be written in C++ and do the following, as indicated in project instructions:
 - A menu needs to display with conversion options:
