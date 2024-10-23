@@ -1,5 +1,9 @@
 # ITCPA1-44-Project
-Project for university module, ITCPA1-44. 
+> Project for university module, ITCPA1-44.
+
+⬇️ Download .exe for Programs to run code.
+
+⬇️ Can also run code with Makefile.
 
 ## Class President Voting System
 A Class President Voting System needs to be written in C++ and do the following, as indicated in project instructions:
@@ -14,10 +18,7 @@ A Class President Voting System needs to be written in C++ and do the following,
 -	The program will display the winner or indicate the case where a tie occurred.
 
 Algorithm the program was designed around:
-![image](https://github.com/user-attachments/assets/21407e54-e705-451c-9aff-dad309d46d85)
-
-
-
+![image](https://github.com/user-attachments/assets/54f346ea-57bf-4558-b327-176bbdb1cbbf)
 
 ## Multi-Converter App
 A Multi-Converter App for a friend from the United states needs to be written in C++ and do the following, as indicated in project instructions:
@@ -32,6 +33,9 @@ A Multi-Converter App for a friend from the United states needs to be written in
 - The result of the conversion needs to be displayed.
 - The program must allow for multiple conversion by asking the user if they would like to do another conversion. Should the user not want to do another conversion, the user can exit the program.
 
+Algorithm the program was designed around:
+![image](https://github.com/user-attachments/assets/6f80241f-21e2-41ba-b136-5cf489f349ba)
+
 ## Dice Tracking Simulation Program
 A Tracking Dice Rolls Program needs to be written in C++ and do the following, as indicated in project instructions:
 - Display a menu for two dice:
@@ -42,4 +46,7 @@ A Tracking Dice Rolls Program needs to be written in C++ and do the following, a
 - Track history of dice rolls.
 - Display history of dice rolls should user prompt history to be displayed.
 - Allow user to exit the program and display a farewell message.
+
+Algorithm the program was designed around:
+![image](https://github.com/user-attachments/assets/b836aff5-f1d9-41db-bfc2-c128b7018208)
 
