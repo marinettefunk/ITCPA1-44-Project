@@ -1,10 +1,6 @@
 # ITCPA1-44-Project
 > Project for university module, ITCPA1-44.
 
-⬇️ Download .exe for Programs to run code.
-
-⬇️ Can also run code with Makefile.
-
 ## Class President Voting System
 A Class President Voting System needs to be written in C++ and do the following, as indicated in project instructions:
 - 	Display the four candidates running for Class President:
